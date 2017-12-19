@@ -5,6 +5,7 @@ import time
 
 instrument = minimalmodbus.Instrument('/dev/ttyUSB0', 1)
 instrument.serial.baudrate = 9600
+instrument.debug = True
 instrument.serial.bytesize = 8
 #instrument.serial.parity = serial.PARITY_EVEN
 instrument.serial.stopbits = 1
